@@ -5,6 +5,8 @@ A flutter library to manager your web cookies for Android (API level 9+) and iOS
 
 The cookies stores and retrieves using the [httpCookieStore](https://developer.apple.com/documentation/webkit/wkwebsitedatastore/2881956-httpcookiestore) for iOS and [CookieManager](https://developer.android.com/reference/android/webkit/CookieManager) for Android.
 
+This package was forked from https://github.com/fryette/webview_cookie_manager due to an inactive maintainer.
+
 ## Get started iOS
 Set minimum version for iOS to 11.0
 
