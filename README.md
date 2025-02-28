@@ -1,5 +1,5 @@
 # Webview Cookie Manager Flutter
-[![pub package](https://img.shields.io/pub/v/webview_cookie_manager.svg)](https://pub.dartlang.org/packages/webview_cookie_manager_flutter)
+[![pub package](https://img.shields.io/pub/v/webview_cookie_manager_flutter.svg)](https://pub.dartlang.org/packages/webview_cookie_manager_flutter)
 
 A flutter library to manager your web cookies for Android (API level 9+) and iOS (11+).
 

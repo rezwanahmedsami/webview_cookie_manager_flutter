@@ -1,36 +1,40 @@
+## 3.0.0
+
+* Fixed ios issue
+
 ## 2.0.7
 
 * Add missing namespace parameter 
 
 ## 2.0.6
 
-* Remove engine dependency([#55](https://github.com/fryette/webview_cookie_manager/pull/55))
-* Document secure cookie usage and restructuring readme([#56](https://github.com/fryette/webview_cookie_manager/pull/56))
+* Remove engine dependency([#55](https://github.com/rezwanahmedsami/webview_cookie_manager_flutter/pull/55))
+* Document secure cookie usage and restructuring readme([#56](https://github.com/rezwanahmedsami/webview_cookie_manager_flutter/pull/56))
 
 ## 2.0.5
 
-* bugfix: Build error with Flutter 2.5.1([#47](https://github.com/fryette/webview_cookie_manager/issues/53))
+* bugfix: Build error with Flutter 2.5.1([#47](https://github.com/rezwanahmedsami/webview_cookie_manager_flutter/issues/53))
 
 ## 2.0.4
 
-* bugfix: Fixed bug where iOS would never return future if cookie list is empty([#47](https://github.com/fryette/webview_cookie_manager/issues/47))
+* bugfix: Fixed bug where iOS would never return future if cookie list is empty([#47](https://github.com/rezwanahmedsami/webview_cookie_manager_flutter/issues/47))
 
 ## 2.0.3
 
-* bugfix: Future returned by setCookies never finishes([#47](https://github.com/fryette/webview_cookie_manager/issues/47))
+* bugfix: Future returned by setCookies never finishes([#47](https://github.com/rezwanahmedsami/webview_cookie_manager_flutter/issues/47))
 
 ## 2.0.2
 
-* feat: ignore cookies with invalid values([#49](https://github.com/fryette/webview_cookie_manager/pull/49))
+* feat: ignore cookies with invalid values([#49](https://github.com/rezwanahmedsami/webview_cookie_manager_flutter/pull/49))
 
 ## 2.0.1
 
-* feat: add origin url parameter ([#43](https://github.com/fryette/webview_cookie_manager/pull/43))
-* bugfix: Forbidden character in cookies ([#44](https://github.com/fryette/webview_cookie_manager/issues/44))
+* feat: add origin url parameter ([#43](https://github.com/rezwanahmedsami/webview_cookie_manager_flutter/pull/43))
+* bugfix: Forbidden character in cookies ([#44](https://github.com/rezwanahmedsami/webview_cookie_manager_flutter/issues/44))
 
 ## 2.0.0
 
-* Stable null safety release ([#32](https://github.com/fryette/webview_cookie_manager/issues/32))
+* Stable null safety release ([#32](https://github.com/rezwanahmedsami/webview_cookie_manager_flutter/issues/32))
 
 ## 1.0.8
 
