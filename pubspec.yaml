@@ -1,9 +1,9 @@
-name: webview_cookie_manager
+name: webview_cookie_manager_flutter
 description: Have you been turned into a cookie management problem? This package can help. It has all of the cookie management functionality you have been looking for.
 version: 2.0.7
-repository: https://github.com/fryette/webview_cookie_manager
-homepage: https://github.com/fryette/webview_cookie_manager
-issue_tracker: https://github.com/fryette/webview_cookie_manager/issues
+repository: https://github.com/rezwanahmedsami/webview_cookie_manager_flutter
+homepage: https://github.com/rezwanahmedsami/webview_cookie_manager_flutter
+issue_tracker: https://github.com/rezwanahmedsami/webview_cookie_manager_flutter/issues
 
 environment:
   sdk: '>=3.0.5 <4.0.0'

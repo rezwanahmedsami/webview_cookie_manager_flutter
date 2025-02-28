@@ -1,5 +1,5 @@
-# Webview Cookie Manager
-[![pub package](https://img.shields.io/pub/v/webview_cookie_manager.svg)](https://pub.dartlang.org/packages/webview_cookie_manager)
+# Webview Cookie Manager Flutter
+[![pub package](https://img.shields.io/pub/v/webview_cookie_manager.svg)](https://pub.dartlang.org/packages/webview_cookie_manager_flutter)
 
 A flutter library to manager your web cookies for Android (API level 9+) and iOS (11+).
 
@@ -63,8 +63,8 @@ cookieManager.setCookies(cookies, origin: 'https://your-domain.net')
 ```
 
 ## Troubleshooting on iOS
- 1) Set minimum target iOS version to 11 ([see also #17](https://github.com/fryette/webview_cookie_manager/issues/17#issuecomment-682382429))
- 2) If you are using Objective C, check that PodFile have a flag use_frameworks ([see also #4](https://github.com/fryette/webview_cookie_manager/issues/4#issuecomment-665508540))
+ 1) Set minimum target iOS version to 11 ([see also #17](https://github.com/rezwanahmedsami/webview_cookie_manager_flutter/issues/17#issuecomment-682382429))
+ 2) If you are using Objective C, check that PodFile have a flag use_frameworks ([see also #4](https://github.com/rezwanahmedsami/webview_cookie_manager_flutter/issues/4#issuecomment-665508540))
 ```
 target 'Runner' do
   use_frameworks!
