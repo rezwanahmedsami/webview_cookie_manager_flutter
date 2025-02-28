@@ -1,3 +1,7 @@
+## 3.0.1
+
+* Lexical or Preprocessor Issue (Xcode) Fixed
+
 ## 3.0.0
 
 * Fixed ios issue
