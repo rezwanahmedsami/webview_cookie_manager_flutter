@@ -9,9 +9,9 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
 A Flutter plugin for managing cookies in WebView on iOS and macOS platforms.
                        DESC
-  s.homepage         = 'https://github.com/fryette/webview_cookie_manager'
+  s.homepage         = 'https://github.com/rezwanahmedsami/webview_cookie_manager_flutter'
   s.license          = { :file => '../LICENSE' }
-  s.author           = { 'webview_cookie_manager' => 'https://github.com/fryette/webview_cookie_manager' }
+  s.author           = { 'webview_cookie_manager' => 'https://github.com/rezwanahmedsami/webview_cookie_manager_flutter' }
   s.source           = { :path => '.' }
   s.source_files     = 'Classes/**/*'
 
