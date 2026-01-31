@@ -1,14 +1,17 @@
 # Webview Cookie Manager Flutter
 [![pub package](https://img.shields.io/pub/v/webview_cookie_manager_flutter.svg)](https://pub.dartlang.org/packages/webview_cookie_manager_flutter)
 
-A flutter library to manager your web cookies for Android (API level 9+) and iOS (11+).
+A flutter library to manager your web cookies for Android (API level 9+), iOS (11+), and macOS (10.13+).
 
-The cookies stores and retrieves using the [httpCookieStore](https://developer.apple.com/documentation/webkit/wkwebsitedatastore/2881956-httpcookiestore) for iOS and [CookieManager](https://developer.android.com/reference/android/webkit/CookieManager) for Android.
+The cookies stores and retrieves using the [httpCookieStore](https://developer.apple.com/documentation/webkit/wkwebsitedatastore/2881956-httpcookiestore) for iOS and macOS, and [CookieManager](https://developer.android.com/reference/android/webkit/CookieManager) for Android.
 
 This package was forked from https://github.com/fryette/webview_cookie_manager due to an inactive maintainer.
 
 ## Get started iOS
 Set minimum version for iOS to 11.0
+
+## Get started macOS
+Set minimum version for macOS to 10.14 (Note: While the plugin supports macOS 10.13, Flutter requires macOS 10.14 as minimum deployment target)
 
 ## Usage
 The WebCookieManager can be used directly or together with [webview_flutter](https://pub.dev/packages/webview_flutter).
@@ -65,6 +68,17 @@ cookieManager.setCookies(cookies, origin: 'https://your-domain.net')
 ## Troubleshooting on iOS
  1) Set minimum target iOS version to 11 ([see also #17](https://github.com/rezwanahmedsami/webview_cookie_manager_flutter/issues/17#issuecomment-682382429))
  2) If you are using Objective C, check that PodFile have a flag use_frameworks ([see also #4](https://github.com/rezwanahmedsami/webview_cookie_manager_flutter/issues/4#issuecomment-665508540))
+```
+target 'Runner' do
+  use_frameworks!
+  use_modular_headers!
+  ..........
+end
+```
+
+## Troubleshooting on macOS
+ 1) Set minimum target macOS version to 10.13
+ 2) Ensure that PodFile has the use_frameworks flag
 ```
 target 'Runner' do
   use_frameworks!
