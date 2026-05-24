@@ -1,44 +1,72 @@
-group 'io.flutter.plugins.webview_cookie_manager'
-version '1.0'
+group "io.flutter.plugins.webview_cookie_manager"
+version "1.0"
 
 buildscript {
+    val kotlinVersion = "2.3.20"
     repositories {
         google()
         mavenCentral()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.1.0'
+        classpath("com.android.tools.build:gradle:9.0.1")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
     }
 }
 
-rootProject.allprojects {
+allprojects {
     repositories {
         google()
         mavenCentral()
-        maven { url "https://storage.googleapis.com/download.flutter.io" }
     }
 }
 
-apply plugin: 'com.android.library'
+plugins {
+    id("com.android.library")
+}
 
 android {
-    namespace 'io.flutter.plugins.webview_cookie_manager'
-    compileSdk 34
+    namespace = "io.flutter.plugins.webview_cookie_manager"
 
-    namespace "io.flutter.plugins.webview_cookie_manager"
+    compileSdk = 36
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    sourceSets {
+        getByName("main") {
+            java.srcDirs("src/main/kotlin")
+        }
+        getByName("test") {
+            java.srcDirs("src/test/kotlin")
+        }
+    }
 
     defaultConfig {
-        minSdkVersion 16
-    }
-    lintOptions {
-        disable 'InvalidPackage'
+        minSdk = 24
     }
 
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
+    testOptions {
+        unitTests {
+            isIncludeAndroidResources = true
+            all {
+                it.useJUnitPlatform()
+
+                it.outputs.upToDateWhen { false }
+
+                it.testLogging {
+                    events("passed", "skipped", "failed", "standardOut", "standardError")
+                    showStandardStreams = true
+                }
+            }
+        }
+    }
 }
 
-dependencies {
-    testImplementation 'junit:junit:4.13.1'
+kotlin {
+    compilerOptions {
+        jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17
+    }
 }

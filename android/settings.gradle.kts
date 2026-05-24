@@ -1,1 +1,1 @@
-rootProject.name = 'webview_cookie_manager'
+rootProject.name = "webview_cookie_manager"
