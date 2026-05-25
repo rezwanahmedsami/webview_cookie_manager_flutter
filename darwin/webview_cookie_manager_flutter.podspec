@@ -13,7 +13,7 @@ A Flutter plugin for managing cookies in WebView on iOS and macOS platforms.
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'webview_cookie_manager' => 'https://github.com/rezwanahmedsami/webview_cookie_manager_flutter' }
   s.source           = { :path => '.' }
-  s.source_files     = 'Classes/**/*'
+  s.source_files     = 'webview_cookie_manager_flutter/Sources/webview_cookie_manager_flutter/**/*.swift'
 
   # Platform support
   s.ios.deployment_target = '11.0'
