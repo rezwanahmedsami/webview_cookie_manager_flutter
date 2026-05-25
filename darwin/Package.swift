@@ -5,7 +5,7 @@ let package = Package(
     name: "webview_cookie_manager_flutter",
     platforms: [
         .iOS("11.0"),
-        .macOS("10.13")
+        .macOS("10.15")
     ],
     products: [
         .library(name: "webview-cookie-manager-flutter", targets: ["webview_cookie_manager_flutter"])
