@@ -8,7 +8,7 @@ import FlutterMacOS
 import WebKit
 
 @available(iOS 11.0, macOS 10.13, *)
-public class SwiftWebviewCookieManagerPlugin: NSObject, FlutterPlugin {
+public class WebviewCookieManagerPlugin: NSObject, FlutterPlugin {
     static var httpCookieStore: WKHTTPCookieStore?
 
     public static func register(with registrar: FlutterPluginRegistrar) {
@@ -20,7 +20,7 @@ public class SwiftWebviewCookieManagerPlugin: NSObject, FlutterPlugin {
         let channel = FlutterMethodChannel(name: "webview_cookie_manager", binaryMessenger: registrar.messenger)
         #endif
 
-        let instance = SwiftWebviewCookieManagerPlugin()
+        let instance = WebviewCookieManagerPlugin()
         registrar.addMethodCallDelegate(instance, channel: channel)
     }
 
@@ -32,20 +32,20 @@ public class SwiftWebviewCookieManagerPlugin: NSObject, FlutterPlugin {
                 result(FlutterError(code: "INVALID_ARGUMENTS", message: "Invalid arguments for getCookies", details: nil))
                 return
             }
-            SwiftWebviewCookieManagerPlugin.getCookies(urlString: url, result: result)
+            WebviewCookieManagerPlugin.getCookies(urlString: url, result: result)
 
         case "setCookies":
             guard let cookies = call.arguments as? Array<NSDictionary> else {
                 result(FlutterError(code: "INVALID_ARGUMENTS", message: "Invalid arguments for setCookies", details: nil))
                 return
             }
-            SwiftWebviewCookieManagerPlugin.setCookies(cookies: cookies, result: result)
+            WebviewCookieManagerPlugin.setCookies(cookies: cookies, result: result)
 
         case "hasCookies":
-            SwiftWebviewCookieManagerPlugin.hasCookies(result: result)
+            WebviewCookieManagerPlugin.hasCookies(result: result)
 
         case "clearCookies":
-            SwiftWebviewCookieManagerPlugin.clearCookies(result: result)
+            WebviewCookieManagerPlugin.clearCookies(result: result)
 
         default:
             result(FlutterMethodNotImplemented)
