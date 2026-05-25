@@ -20,9 +20,7 @@ let package = Package(
             name: "webview_cookie_manager_flutter",
             dependencies: [
                 .product(name: "FlutterFramework", package: "FlutterFramework")
-            ],
-            path: "Classes",
-            publicHeadersPath: "."
+            ]
         )
     ]
 )
