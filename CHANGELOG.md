@@ -1,3 +1,9 @@
+## 3.1.0
+
+* Add Swift Package Manager (SPM) support for iOS and macOS
+* Regenerate Android build files and prepare for Gradle 9 migration
+* Increase minimum macOS version as required for Flutter 3.44
+
 ## 3.0.1
 
 * Lexical or Preprocessor Issue (Xcode) Fixed
